@@ -50,26 +50,11 @@ h1 {
     opacity: 0;
 }
 
-.panel h4 {
-    font-size: 0.8rem;
-    font-weight: normal;
-    width: 95%;
-    height: 30%;
-    padding: 20px;
-    margin: 0;
-    opacity: 0;
-    overflow: hidden;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
-}
-
 .panel.active {
     box-shadow: 6px 6px gray;
     flex: 5;
 }
-
-.panel.active h3,
-.panel.active h4 {
+.panel.active h3{
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
 }
@@ -79,7 +64,6 @@ a {
     text-shadow: 0.2rem 0.2rem #000;
     text-decoration: none;
 }
-
 a:hover {
     font-weight: bolder;
     font-size: 36px;
