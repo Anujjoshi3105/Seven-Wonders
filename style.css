@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Mulish:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+    height: 90vh;
+}
+
+h1 {
+    font-family: "Black Ops One", sans-serif;
+    text-shadow: 10px 10px #000;
+    font-size: 6rem;
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 2%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.panel h3 {
+    font-size: 2rem;
+    padding-left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel h4 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    width: 95%;
+    height: 30%;
+    padding: 20px;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+}
+
+.panel.active {
+    box-shadow: 6px 6px gray;
+    flex: 5;
+}
+
+.panel.active h3,
+.panel.active h4 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+a {
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem #000;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bolder;
+    font-size: 36px;
+    transition: all 0.2s ease-in;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+}
